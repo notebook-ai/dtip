@@ -1,0 +1,53 @@
+LEVEL ONE:
+------------------------------------
+sudo apt update
+sudo apt upgrade
+sudo apt install nodejs npm
+sudo npm install n -g
+node -v
+npm -v
+
+
+LEVEL TWO:
+-----------------------------------
+npx create-adonis-ts-app PROJECT_NAME
+
+cd PROJECT_NAME
+
+node ace serve --watch
+
+LEVEL THREE
+----------------------------------
+node ace --help
+
+node ace serve --help
+
+node ace serve --watch
+
+node ace list:routes
+
+------------------------------------
+
+node ace make:controller PagesController 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
