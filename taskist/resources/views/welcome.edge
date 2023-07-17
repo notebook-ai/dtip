@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdonisJS - A fully featured web framework for Node.js</title>
+  @entryPointStyles('app')
+  @entryPointScripts('app')
+</head>
+<body>
+
+  <main>
+    <div>
+      <h1 class="title"> welcome or Home page</h1>
+
+      <a href="{{ route('about_page')}}"> about </a>
+      <br>
+      <a href="{{ route('contact_page')}}"> contact </a>
+
+      @set('fullname', 'm.h')
+
+      <br>
+      {{ fullname }}
+
+
+      <br>
+      @{{ fullname }}
+
+
+      <br>
+      {{ '<p> this will be escaped </p>'}}
+      <br>
+
+
+      {{{ '<p> this will be not escaped </p>'}}}
+
+    </div>
+  </main>
+</body>
+</html>
